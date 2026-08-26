@@ -1,0 +1,22 @@
+{
+  "name": "thaimooc-ai-learning-planner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI planning layer for ThaiMOOC course discovery, study planning, and calendar sync.",
+  "license": "MIT",
+  "packageManager": "pnpm@9.12.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @thaimooc/web --filter @thaimooc/api dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "format": "prettier --write .",
+    "db:generate": "pnpm --filter @thaimooc/database db:generate",
+    "db:migrate": "pnpm --filter @thaimooc/database db:migrate"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
